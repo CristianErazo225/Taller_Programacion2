@@ -1,0 +1,14 @@
+.contenedor{
+    color: black;
+}
+.disabled-button{
+    background-color: rgb(231, 41, 41);
+}
+
+.yellow-button{
+    background-color: rgb(255, 204, 0);
+}
+
+.green-button{
+    background-color: rgb(26, 152, 49);
+}

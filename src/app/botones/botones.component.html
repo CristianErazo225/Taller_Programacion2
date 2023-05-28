@@ -1,0 +1,19 @@
+
+<div class="Contenedor">
+    <button [class]="{'disabled':botonDesactivar,
+                      'btn': true,
+                      'btn-danger':true}" class="btn btn-danger disabled" (click)="colorTexto ='text-danger'">Color Rojo</button>
+    <button [class]="{'disabled':botonDesactivar,
+                      'btn':true, 
+                      'btn-success mx-3':true}" class="btn btn-success mx-3" (click)="colorTexto ='text-success'">Color Verde</button>
+    <button [class]="{'disabled':botonDesactivar, 
+                      'btn':true, 
+                      'btn-primary':true}" class="btn btn-primary"(click)="colorTexto ='text-primary'">Color Azul</button>
+</div>
+
+<br><p [class]='colorTexto'>Texto donde se mira el cambio de color</p><br>
+{{colorTexto}}
+
+<button class="btn btn-secondary" (click)="botonDesactivar = !botonDesactivar">
+    Activar/Desactivar
+</button><br>
